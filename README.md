@@ -4,3 +4,5 @@
 * [Markdown Fundamentals](Notes/Markdown-fundamentals.md)
 * [Git](Notes/Git.md)
 * [Agile](Notes/Agile.md)
+* [Cloud Fundamentals](<Notes/Cloud Fundamentals.md>)
+* 
