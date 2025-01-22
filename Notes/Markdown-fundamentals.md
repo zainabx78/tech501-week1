@@ -1,4 +1,11 @@
 ## Markdown fundamentals
+- [Markdown fundamentals](#markdown-fundamentals)
+  - [Bullet points](#bullet-points)
+  - [Numbering](#numbering)
+  - [Bold and italics](#bold-and-italics)
+  - [Images](#images)
+  - [Links](#links)
+  - [Creating table of contents](#creating-table-of-contents)
 
 ### Bullet points
 
