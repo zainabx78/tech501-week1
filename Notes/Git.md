@@ -18,6 +18,10 @@
 # GitHub
 
 ## Syncing the local git repo to your gitub repo.
-- In the git bash terminal, in the repo folder, enter the command: [git remote add origin https://github.com/zainabx78/tech501-week1-.git].
+- In the git bash terminal, in the repo folder, enter the command: **[git remote add origin https://github.com/zainabx78/tech501-week1-.git].**
+  - This command links your local repo to the github repo.
+- Then push the commits to the github repo- actual syncing **[git push -u origin main].**
+- Only need to specify the branch name the first time you push. Next time can just use command **[git push]**
 - Only the changes you've committed will be synced up. 
+- Opposite of push command is the git pull command. When you want to sync changes from github repo to the local repo. 
   
