@@ -5,4 +5,4 @@
 * [Git](Notes/Git.md)
 * [Agile](Notes/Agile.md)
 * [Cloud Fundamentals](<Notes/Cloud Fundamentals.md>)
-* 
+* [Cloud-AZ-Labs](<Notes/Azure Labs.md>)
