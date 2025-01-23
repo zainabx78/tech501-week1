@@ -7,6 +7,10 @@
     - [Creating a VM](#creating-a-vm)
     - [SSH into the VM](#ssh-into-the-vm)
     - [Deleting resources](#deleting-resources)
+- [Linux](#linux)
+  - [Bash shell scripting](#bash-shell-scripting)
+    - [Creating a shell script to create an nginx web server.](#creating-a-shell-script-to-create-an-nginx-web-server)
+  - [Creating a custom nginx webpage](#creating-a-custom-nginx-webpage)
 
 
 #  Azure Cloud
@@ -81,3 +85,81 @@ Public Ip addresses cost money. They're also optional. Private IP addresses are 
 - Go to resource groups.
 - Filter out the services by typing "zainab" (naming convention has zainab in all resources)
 - Delete all resources except the ssh key and virtual network.
+
+# Linux
+- Once inside the vm, run these commands:
+  - [sudo apt update -y]
+    - Good to use to check if vm is connected to the internet. 
+    - Sudo= super user do.
+  - [sudo apt upgrade -y]
+  
+## Bash shell scripting
+### Creating a shell script to create an nginx web server.
+- [nano provision.sh]
+  - Opens an editor and creates the shell file. 
+  - Create the script inside this:
+    - #update
+      sudo apt update -y
+
+      #upgrade
+      sudo apt upgrade -y
+
+      #install nginx
+      sudo apt install nginx -y
+
+      #restart nginx
+      sudo systemctl restart nginx
+
+      #enable nginx - enabled - starts automatically when we start virtual machine.
+      sudo systemctl start nginx
+      sudo systemctl enable nginx
+      #Check if its enable: sudo systemctl is-enabled nginx
+
+
+
+- If you make a change to nginx, you need to restart it before those changes are applied.
+- systemctl controls system processes e.g. installed tools/services.
+
+## Creating a custom nginx webpage
+
+- To backup the default:
+- sudo cp -r /var/www/html /var/www/html_backup
+
+- index.html in the /var/www/html directory
+- Enter this in the index.html file [sudo nano index.html]
+
+- This code generates a web page.
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Web Page</title>
+</head>
+<body>
+    <h1>Welcome to Zainab's webpage!</h1>
+</body>
+</html> 
+
+
+
+To download the image first:
+- sudo wget https://c02.purpledshub.com/uploads/sites/40/2023/08/JI230816Cosmos220-6d9254f-edited-scaled.jpg
+
+
+Upgraded version with an image link:
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Web Page</title>
+</head>
+<body>
+    <h1>Welcome to Zainab's webpage!</h1>
+    <p>Here is a beautiful flower:</p>
+    <img src="JI230816Cosmos220-6d9254f-edited-scaled.jpg
+" alt="A beautiful flower" style="width:300px; height:auto;">
+</body>
+</html>
+
+
+
+
