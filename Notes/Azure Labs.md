@@ -88,17 +88,18 @@ Public Ip addresses cost money. They're also optional. Private IP addresses are 
 
 # Linux
 - Once inside the vm, run these commands:
-  - [sudo apt update -y]
+  - `sudo apt update -y`
     - Good to use to check if vm is connected to the internet. 
     - Sudo= super user do.
-  - [sudo apt upgrade -y]
+  - `sudo apt upgrade -y`
   
 ## Bash shell scripting
 ### Creating a shell script to create an nginx web server.
-- [nano provision.sh]
+- `nano provision.sh`
   - Opens an editor and creates the shell file. 
   - Create the script inside this:
-    - #update
+     ```
+      #update
       sudo apt update -y
 
       #upgrade
@@ -114,7 +115,7 @@ Public Ip addresses cost money. They're also optional. Private IP addresses are 
       sudo systemctl start nginx
       sudo systemctl enable nginx
       #Check if its enable: sudo systemctl is-enabled nginx
-
+      ```
 
 
 - If you make a change to nginx, you need to restart it before those changes are applied.
@@ -122,12 +123,13 @@ Public Ip addresses cost money. They're also optional. Private IP addresses are 
 
 ## Creating a custom nginx webpage
 
-- To backup the default:
-- sudo cp -r /var/www/html /var/www/html_backup
+  To backup the default:
+  - sudo cp -r /var/www/html /var/www/html_backup
 
-- index.html in the /var/www/html directory
-- Enter this in the index.html file [sudo nano index.html]
+- Create an index.html file in the /var/www/html directory `sudo nano index.html`
+- Enter this in the index.html file:
 
+```
 - This code generates a web page.
 <!DOCTYPE html>
 <html>
@@ -138,15 +140,16 @@ Public Ip addresses cost money. They're also optional. Private IP addresses are 
     <h1>Welcome to Zainab's webpage!</h1>
 </body>
 </html> 
-
+```
 
 
 To download the image first:
-- sudo wget https://c02.purpledshub.com/uploads/sites/40/2023/08/JI230816Cosmos220-6d9254f-edited-scaled.jpg
+- `sudo wget https://c02.purpledshub.com/uploads/sites/40/2023/08/JI230816Cosmos220-6d9254f-edited-scaled.jpg`
 
 
 Upgraded version with an image link:
 
+```html
 <!DOCTYPE html>
 <html>
 <head>
@@ -159,7 +162,4 @@ Upgraded version with an image link:
 " alt="A beautiful flower" style="width:300px; height:auto;">
 </body>
 </html>
-
-
-
-
+```
