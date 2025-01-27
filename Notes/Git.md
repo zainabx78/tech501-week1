@@ -18,6 +18,7 @@
 # GitHub
 
 ## Syncing the local git repo to your gitub repo.
+- Create a public empty github repo. Name it `tech501-week1`.
 - In the git bash terminal, in the repo folder, enter the command: **[git remote add origin https://github.com/zainabx78/tech501-week1-.git].**
   - This command links your local repo to the github repo.
 - Then push the commits to the github repo- actual syncing **[git push -u origin main].**
