@@ -3,6 +3,9 @@
 * Saves versions of files/folders.
 * Tracks changes.
 
+## .Git folder
+- Created when you initialize a repo, if you remove it your repo will no longer be a git repo.
+
 ## Git repository (Repo)
 * Just a normal folder/directory at the beginning.
 * Use git init to turn the folder into a git repository.
