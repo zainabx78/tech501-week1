@@ -11,9 +11,10 @@
 
 
 # Linux
+- `code .` - Allows you to take that folder from git bash to vscode.
 - `ls -la` - shows permissions of all files hidden ones too.
 - `cd / ` - Takes you to the root directory.
-- `cd ..` - Takes you to the parent directory.
+- `cd ..` - Takes you to the parent directory (directory before).
 - `cd ~` - Takes you to your home directory. By default should have full permissions to this directory.
   - There's also a home folder but its different to the home directory!
 - `ls -a` shows hidden files.
@@ -115,12 +116,12 @@ Upgraded version with an image link:
 - `mv` = Renames files and also moves files. 
   - `mv cat.jpg cat.txt` = Changes name of jpg file to a txt file.
   - The file is still seen as a jpg file - can't trick linux.
-  - To move a file to a different folder `mv filename xistingFolderName`.
+  - To move a file to a different folder `mv filename existingFolderName`.
   - Another way to move file to home directory `mv chicken-joke.txt /home/adminuser/`
   - `mv /home/adminuser/funny-stuff/chicken-joke.txt ~` = moving a file even if you don't cd to the location of the file - just add the paths.
 - `file cat.jpg` = shows file details e.g. what kind of file it is. 
 - `rm` = deletes files. 
-- mkdir = creates a folder  
+- `mkdir` = creates a folder  
   - If you add a space in between the folder name it will create 2 folders so don't use space. 
   - If you want a space, use quotes.
     - e .g "my pictures" - to cd into this folder you have to use quotes too.
