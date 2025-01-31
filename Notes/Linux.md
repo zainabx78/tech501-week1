@@ -7,6 +7,7 @@
     - [Creating my own environment variable:](#creating-my-own-environment-variable)
     - [Processes-](#processes-)
     - [To stop processes:](#to-stop-processes)
+  - [Permissions-](#permissions-)
 
 
 
@@ -113,6 +114,7 @@ Upgraded version with an image link:
 
 ## Additional Linux
 
+- `sed` - finds something in a file and replaces it for you.
 - `mv` = Renames files and also moves files. 
   - `mv cat.jpg cat.txt` = Changes name of jpg file to a txt file.
   - The file is still seen as a jpg file - can't trick linux.
@@ -160,7 +162,7 @@ Environment variables-
 To create it as an environment variable: `export MYNAME=zainab` 
 - If you exit vm, and ssh back in, the env variable disappears. (no persistance).
 
-Making the env variable persistent:
+Making the env variable persistent: Only works for the user you change the bashrc file for.
 - `echo "export MYNAME=zainab_is_persistent"` - Just prints the command.
 - `echo "export  MYNAME=zainab_is_persistent" >>.bashrc` - same command but uses `>>` to add the echo comment to the .bashrc file.
   - The .bashrc file is persistent.
@@ -208,4 +210,10 @@ pm2= Process manager.
     - If you kill that child process, it will instantly start up another child process for that application to stay running. This is because it's responsible for keeping the app alive.
     - Want to shut down the process= Gracefully terminate it. 
 
+
+## Permissions- 
+- `sudo` - good for one time commands - cannot access environment variables 
+- `chown` - change owner
+- `chmod 777` - read and write and execute permissions.
+- `sudo -E` - to access the environment variables too.
 
