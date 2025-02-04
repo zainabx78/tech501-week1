@@ -8,6 +8,7 @@
     - [Processes-](#processes-)
     - [To stop processes:](#to-stop-processes)
   - [Permissions-](#permissions-)
+  - [Cloud Security](#cloud-security)
 
 
 
@@ -217,3 +218,11 @@ pm2= Process manager.
 - `chmod 777` - read and write and execute permissions.
 - `sudo -E` - to access the environment variables too.
 
+## Cloud Security
+
+Is security better in the cloud than on-prem - 
+- Possible to make security mistakes on cloud and on prem.
+- Depends on the effort put in.
+- Depends on the model you use:
+  - IAAS: more responsibility of security. 
+  - PAAS: less responsibility of security. More managed- less patching required.
